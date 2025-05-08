@@ -225,10 +225,21 @@ section,
   border: 1px solid #d32f2f !important;
 }
 
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .phone-rem {
     gap: 20px;
   }
+} */
+
+.desk-img{
+  display: block;
+}
+.mob-img{
+  display: none;
+}
+
+.mar-f-desk{
+  margin-bottom: 20px;
 }
 
 /* Mobile view adjustments */
@@ -242,11 +253,30 @@ section,
   }
 
   .custom-form h2 {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .custom-form p {
-    font-size: 15px;
+    font-size: 12px;
+  }
+  .hero {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 10px 0 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .desk-img{
+    display: none;
+  }
+  .mob-img{
+    display: block;
+  }
+
+  .mar-f-desk{
+    margin-bottom: 5px;
   }
 }
 
@@ -296,4 +326,26 @@ section,
 
 .missed-msg {
   padding: 10px;
+}
+
+.otp-input {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.otp-input:focus {
+  border-color: #e21b22;
+  box-shadow: 0 0 3px #e21b22;
+  outline: none;
+}
+
+@media (max-width: 576px) {
+  .otp-input {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
 }
