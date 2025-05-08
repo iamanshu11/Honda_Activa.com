@@ -96,7 +96,7 @@ section,
 #header {
   background: transparent;
   min-height: 70px;
-  border-bottom: 1px solid #eee;
+  /* border-bottom: 1px solid #eee; */
   z-index: 1030;
 }
 
